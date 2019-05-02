@@ -9,7 +9,7 @@ After clicking on any keyword on the Keyword List tab open up another page (dash
 
 Follow these steps to run this scraper.
 
-git clone https://github.com/raoalok/imagescrape or download repository on your machine.
+git clone https://github.com/Abhishekop722/NodeTask or download repository on your machine.
 
 Then install all the node dependencies using ' npm install '*
 
