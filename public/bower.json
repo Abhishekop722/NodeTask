@@ -1,0 +1,23 @@
+{
+  "name": "public",
+  "authors": [
+    "Abhishek Sharma <abhishekop722@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "font-awesome": "^5.8.1",
+    "angular": "^1.7.8",
+    "angular-route": "^1.7.8"
+  }
+}

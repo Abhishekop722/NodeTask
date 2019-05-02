@@ -1,0 +1,29 @@
+form, .history{
+    position:absolute;
+    top:50vh;
+    left:50vw;
+    transform: translate(-50%,-50%);
+}
+#loader{
+    position:absolute;
+    transform: translateX(-100%);
+}
+input{
+    border: 1px solid black;
+    border-radius:10px;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    outline: none;
+}
+.btn{
+    font-size: 1.2rem;
+    margin-bottom:0.5rem;
+}
+.history button{
+    display:inline-block;
+    text-align: center;
+    width:100px;
+}
+.images div{
+    display: inline-block;
+}
