@@ -5,6 +5,6 @@ app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 app.use('/',require('./api/routes'));
-app.listen('1234',()=>{
+app.listen(process.env.PORT || '1234',()=>{
     console.log('Server start');
 })
