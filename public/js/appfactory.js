@@ -1,10 +1,12 @@
-appModule.factory('appfactory',['$http','SUBMIT_URL','HISTORY_URL',($http,SUBMIT_URL,HISTORY_URL)=>{
+appModule.factory('appfactory',['$http','$location',($http,$location)=>{
     return {
+        baseUrl:'http://'+$location.host()+':'+$location.port() ,
         submit(obj){
-            return $http.post(SUBMIT_URL,obj);
+            //console.log(this.baseUrl);
+            return $http.post(this.baseUrl + '/submit',obj);
         },
         history(){
-            return $http.get(HISTORY_URL);
+            return $http.get(this.baseUrl + '/history');
         }
     }
 }])
