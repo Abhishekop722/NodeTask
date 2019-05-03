@@ -9,7 +9,7 @@ appModule.controller('appctrl',['$scope','appfactory','$location',($scope,appfac
             return;
         }
         $scope.loader = true;
-        console.log('out if');
+        console.log('out if',$scope.input.keyword);
         let promise = appfactory.submit({keyword:$scope.input.keyword});
         promise.then(data=>{
             $scope.loader = false;
@@ -20,6 +20,7 @@ appModule.controller('appctrl',['$scope','appfactory','$location',($scope,appfac
             }
             else alert('Something went wrong');
         },err=>{
+            $scope.loader = true;
             console.log(err);
             alert('Server error');
         })
