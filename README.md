@@ -1,15 +1,15 @@
 # NodeTask
 
-This Image Scraper build using Node.js, MongoDB, Angularjs and various node modules which scrape images from Fetch images from google and save top 15 images after passing through a compression algorithm then through a black and white filter and saved to a Local HDD.
+This Image Scraper build using Node.js, MongoDB, Angularjs and some third party node modules which fetch images from google and save top 15 images after passing through a compression algorithm then through a black and white filter and saved to a Local HDD.
 
 Keyword List tab will display all the keywords searched by the user.
 
 After clicking on any keyword on the Keyword List tab open up another page (dashboard ) which will have all the images for that particular keyword and now these images will be retrieve from Local HDD.
 
 
-Follow these steps to run this scraper.
+Follow these steps to run this image scraper.
 
-git clone https://github.com/Abhishekop722/NodeTask or download repository on your machine.
+first of all download repository on your machine.
 
 Then install all the node dependencies using ' npm install '*
 
