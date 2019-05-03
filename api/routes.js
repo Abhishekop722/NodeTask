@@ -27,8 +27,8 @@ router.post('/submit',(req,response)=>{
         for(let key in res){
             console.log(key,res[key].url);
             jimp.read(res[key].url).then(file=> {
-                file.resize(300, 300) // resize
-                    .quality(80) // set JPEG quality
+                file.resize(100, 100) // resize
+                    .quality(50) // set JPEG quality
                     .greyscale() // set greyscale
                     .write('public/images/'+ keyword + [key] +'.jpg'); // save
             }).catch(function (err) {
