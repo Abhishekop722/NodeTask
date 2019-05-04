@@ -16,7 +16,7 @@ router.post('/submit',(req,response)=>{
     console.log(req.body);
     google.list({
       keyword: keyword,
-      num: 5,
+      num: 15,
       detail: true
       // nightmare: {
       //     show: true
