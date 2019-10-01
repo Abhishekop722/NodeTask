@@ -13,19 +13,12 @@ router.post('/submit',(req,response)=>{
             console.log('Keyword added');
         }
     })
-    console.log(req.body);
     google.list({
       keyword: keyword,
-      num: 15,
+      num: 10,
       detail: true
-      // nightmare: {
-      //     show: true
-      // }
     }).then(function (res) {
-        console.log('first 10 results from google', res);
-        //response.send(res);
         for(let key in res){
-            console.log(key,res[key].url);
             jimp.read(res[key].url).then(file=> {
                 file.resize(100, 100) // resize
                     .quality(50) // set JPEG quality
@@ -45,7 +38,7 @@ router.get('/history',(req,res)=>{
     keywordsModel.find((err,doc)=>{
         if(err){
             console.log(err);
-            res.status(500).json({status:"E",message:'internal db error'});
+            res.status(500).json({status:"E",message:'internal database error'});
         }
         else{
             console.log(doc);
