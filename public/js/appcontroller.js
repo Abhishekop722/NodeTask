@@ -46,5 +46,6 @@ appModule.controller('appctrl',['$scope','appfactory','$location',($scope,appfac
         console.log($scope.showKey);
         $location.url('show');
     }
+    
     $scope.history();
 }])
